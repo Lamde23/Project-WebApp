@@ -1,0 +1,256 @@
+body {
+    margin-top: 100px;
+    /* padding: 25px; */
+    font-family: Arial;
+    background-image: url("Lol.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* background-repeat: repeat; */
+}
+
+.banner{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(66, 48, 12, 0.9);
+    padding: 10px 15px;
+    width: 99%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    /* box-sizing: border-box; */
+    max-height: 100px;
+
+}
+/* .bannerimage{
+    align-items: center;
+    position: relative;
+} */
+
+.banner button{
+    position: relative;
+    font-family: "Times New Roman";
+    background-color: rgba(240, 248, 255, 0.484);
+    font-size: 25px;
+    width: 200px;
+    font-weight: bold;
+}
+.banner button:hover{
+    background-color: rgb(73, 63, 38);
+    font-weight: normal;
+}
+
+.heading1{
+    font-weight: 700;
+    font-family: Arial;
+    text-align: center;
+    text-shadow: -1px -1px 0 #ffffff;
+}
+
+.content{
+    background-color: rgba(255, 255, 255, 0.674);
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+    margin: 20px;
+    text-align: left;
+}
+
+.content2 {
+    max-width: 1400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    /* border: 1px solid black; */
+    table-layout: fixed;
+    width: 100%;
+  }
+
+.articlesContainerHead, .articlesContainer{
+    display: flex;
+    flex-direction: row;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+    margin: 5px;
+    justify-content: space-between;
+}
+.articlesContainer:hover{
+    background-color: #41404080;
+    border: 2px solid rgb(183, 127, 14);
+}
+
+.articleHeading{
+    flex: 4;
+}
+.articleItem1{
+    flex: 2;
+    /* width: 20%; */
+}
+.articleItem2{
+    flex: 0.5;
+    /* width: 10%; */
+}
+.articleItem3{
+    flex: 4;
+    /* width: 40%;  */
+    max-height: fit-content;
+    /* overflow: hidden; */
+}
+.articleItem4{
+    flex: 4;
+    /* width: 40%; */
+}
+
+.previewContent{
+    display: block;
+}
+.articleContent {
+    display: none;
+    max-height: fit-content;
+}
+
+.seeArticleButton {
+    display: none;
+    background-color: rgb(183, 127, 14);
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.seeArticleButton2{
+    display: none;
+    background-color: rgb(34, 183, 14);
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.articlesContainer:hover .seeArticleButton2, .articlesContainer:hover .seeArticleButton {
+    display: inline-block;
+}
+
+#catgif{
+    float: right;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+
+.footer{
+    background-color: grey;
+    font-size: 15px;
+    padding: 5px 15px;
+
+}
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    width: 100px;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#tagname{
+    max-width: 500px;
+}
+#date{
+    max-width: 500px;
+}
+#textarea{
+    height: 300px;
+}
+
+.alert{
+padding: 20px;
+  background-color: #28851c;
+  color: white;
+  margin-bottom: 15px;
+}
+.alertred{
+    background-color: #851c1c;
+    color: white;
+}
+.close {
+    cursor: pointer;
+    /* position: absolute; */
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 20px;
+    
+    transition: 0.3s;
+  }
+  .closebtn:hover {
+    color: black;
+  }
+
+.checkbox{
+    size: 10px;
+
+}
+.label2{
+    display: block ruby;
+    position: relative;
+}
+
+
+/* Video adjust size to screen */
+.video-container{
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video-container iframe,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+.video-wrap {
+  width: 100%;
+  max-width: 600px;
+}
